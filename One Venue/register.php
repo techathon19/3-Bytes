@@ -14,7 +14,7 @@
   $sql = "insert into customers(Name,Email,Password) values('$Name','$Email','$Password')";
   if(mysqli_query($conn,$sql))
   {
-      header("location:user.html");
+      header("location:login.html");
   }
   else
   {

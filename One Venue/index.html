@@ -107,10 +107,10 @@
   </ul>
 </nav><br>
 <div class="container" style="background-color: black; color: white; text-align: center; padding: 10px;">     
-<form action="/action_page.php"></form>
-Location: <input type="text" name="location"><br><br>
-Hall:    <input list="browsers" name="browser">
-    <datalist id="browsers">
+<form action="get.php" method="POST">
+Location: <input type="text" name="location" value="REC"><br><br>
+Hall:    <input list="hall" name="hall">
+    <datalist id="hall">
       <option value="Indoor Auditorium">
       <option value="Techlounge">
       <option value="Main Seminar Hall">
@@ -123,7 +123,8 @@ Hall:    <input list="browsers" name="browser">
     From Time: <input type="time" name="ftime"><br><br>
     To Time: <input type="time" name="ttime"><br><br>
 
-<button type="submit" class="btn" >Book</button>
+   <button type="submit" class="btn" >Book</button>
+   </form>
 </form>
 </div><br><br>
 <h2 style="text-align: center; color:black;"> Available halls</h2><br><br>

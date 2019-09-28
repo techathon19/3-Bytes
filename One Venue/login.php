@@ -14,7 +14,7 @@ $sql="select * from customers where email='$Email' and password='$Password'";
 $result=mysqli_query($conn,$sql);
 $count=mysqli_num_rows($result);
 if ($count==1){
-  header("location:login.html");
+  header("location:index.html");
 }
 else{
   echo "Not existing";
