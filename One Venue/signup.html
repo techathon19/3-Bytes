@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Sign Up</title>
+<link href="bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap4/css/sign.css" rel="stylesheet">
+  </head>
+
+<body style="background-image:url(images/signbg.jpg); background-repeat: no-repeat; background-size:1300px 700px;">
+<div class="form-popup" id="myForm">
+  <form class="form-container" method="post" action="data.php">
+      <h1 style="color:white";>Sign Up</h1>
+      <a href="index.html"><span class="close">x</span></a>
+      <br>
+      <label for="name" style="color:white";><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+      <label for="email" style="color:white";><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <label for="psw" style="color:white";><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pwd" required>
+      <label for="psw-repeat" style="color:white";><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="cpwd" required>
+      <button type="submit" onsubmit="return func()" class="btn" style="background-color: gray; color: black"><b>Sign Up</b> </button>
+     </div>
+  </form>
+</div>
+
+</body>
+<script>
+
+</script>
+</html>

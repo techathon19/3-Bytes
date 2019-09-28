@@ -1,0 +1,50 @@
+@CHARSET "ISO-8859-1";
+.form-popup {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f1f1f1;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;3
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #025E7F;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+}
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.form-container .cancel {
+  background-color: #ACCCD8;
+}
