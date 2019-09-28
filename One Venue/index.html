@@ -1,0 +1,278 @@
+<html>
+<head>
+  <title>One Venue</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+  <script src="bootstrap4/js/bootstrap.min.js"></script>
+  
+  
+  <script type="text/javascript">
+  
+  function regForm() {
+	  
+	  var name = document.getElementById("name");
+	  var email = document.getElementById("email");
+	  var password = document.getElementById("userPassword");
+	  var password2 = document.getElementById("userPassword2");
+	  
+	  if(name.value == "") {
+		  alert("Please enter the name.");
+		  name.focus();
+	  }
+	  else if(email.value == ""){
+		  alert("Please enter the email address.");
+		  email.focus();
+	  }
+	  else if(!validateEmail(email.value)){
+		  alert("Please enter the valid email address.");
+		  email.focus();
+	  }
+	  else if(password.value == ""){
+		  alert("Please enter the password.");
+		  password.focus();
+	  }
+	  else if(password2.value == ""){
+		  alert("Please enter the confirm password.");
+		  password2.focus();
+	}
+	 else if(password2.value != password.value){
+		 alert("Password miss-match.");
+		  password.focus();
+	}
+	 else {
+		 document.getElementById("refForm").submit();
+	 }
+	  
+  }
+  
+  function validateEmail(email) {
+	  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	  return re.test(email);
+	}
+   
+  function loginValid()
+  {
+	  var userName = document.getElementById("userName");
+	  var pwd = document.getElementById("pwd");
+	  
+	  if(userName.value == " "){
+		     window.alert("Please provide the regitered email-id!");
+		     userName.focus();
+	  } else if(pwd.value == " ") {
+	     window.alert("Please provide a valid password!");
+	     pwd.focus();
+	  }else {
+		  document.getElementById("loginForm").submit();
+	  }
+	  
+  }
+  
+  </script>
+</head>
+<body>
+
+  <div class="row" style="background-color:white; padding:10px;">
+    <div class="col-sm-2">
+     <img alt="logo" src="images/Logo.png" style="width:250px; height:150px;">
+    </div>
+    <div class="col-sm-8" >
+		<div style="text-align:center;">
+      <h1>ONE VENUE!</h1>
+	  <h3 >- A world of halls for your need.</h3>
+	  </div>
+    </div>
+    <div class="col-sm-2">
+		<div style="padding-top:20px;">
+      <a href="login.html"><button type="button" class="btn btn-primary">Login</button></a>
+	  <a href="signup.html"><button" class="btn btn-success">Register</button></a>
+	  </div>
+    </div>
+  </div>
+  
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About Us</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="#">Contact Us</a>
+    </li>
+  </ul>
+</nav>
+<div class="row">
+	<div class="col-sm-4">
+		<div class="card">
+		  <div class="card-header"><img src="images/Indoor.jpg" alt="hall" align="center" height="490"></div>
+		  <div class="card-body"><b>Indoor Auditorium</b><br>
+              Location: REC<br>
+              Capacity: 1500<br>
+              Type: Non Ac<br>
+              Amenities: WiFi<br>
+              </div> 
+		  <div class="card-footer"><button>View Hall</button></div>
+		</div>
+	</div>
+	
+	<div class="col-sm-4">
+		<div class="card">
+		  <div class="card-header"><img src="images/Techlounge.jpg" alt="hall" align="center" height="490"></div>
+		  <div class="card-body"><b>Techlounge</b><br>
+                Location: REC<br>
+                Capacity: 3000<br>
+                Type: Ac<br>
+                Amenities: WiFi,Projector,Computer<br>
+		  </div> 
+		  <div class="card-footer"><button>View Hall</button></div>
+		</div>
+	</div>
+	
+	<div class="col-sm-4">
+		<div class="card">
+		  <div class="card-header"><img src="images/Main.jpg" alt="book" align="center" height="490"></div>
+		  <div class="card-body"><b>Main Seminar Hall</b><br>
+                Location: REC<br>
+                Capacity: 500<br>
+                Type: Ac<br>
+                Amenities: WiFi<br></div> 
+		  <div class="card-footer"><button>View Hall</button></div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-4">
+		<div class="card">
+		 <div class="card-header"><img src="images/Mini.jpg" alt="hall" align="center" width="320" height="490"></div>
+		  <div class="card-body"><b>Mini Seminar Hall</b><br>
+                Location: REC<br>
+                Capacity: 300<br>
+                Type: Ac<br>
+                Amenities: WiFi,Projector<br>
+          </div> 
+		  <div class="card-footer"><button>View Hall</button></div>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="card">
+		  <div class="card-header"><img src="images/purple.jpg" alt="hall" align="center" width="320" height="490"></div>
+		  <div class="card-body"><b>Purple Hall</b><br>
+            Location: REC<br>
+            Capacity: 50<br>
+            Type: Ac<br>
+            Amenities: WiFi,Projector<br></div> 
+		  <div class="card-footer"><button>View Hall</button></div>
+		</div>
+	</div>
+	
+	<div class="col-sm-4">
+		<div class="card">
+		  <div class="card-header"><img src="images/conference.jpg" alt="hall" align="center" width="320" height="490"></div>
+		  <div class="card-body"><b>Conference Hall</b><br>
+            Location: REC<br>
+            Capacity: 60<br>
+            Type: Ac<br>
+            Amenities: WiFi,Projector<br>
+          </div> 
+		  <div class="card-footer"><button>View Hall</button></div>
+		</div>
+	</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+  <form action="login.html" method="post" id = "loginForm">
+  
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Login</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="form-group">
+    <label for="name">username:</label>
+    <input type="text" class="form-control" id="userName" name="name">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" name="pwd">
+  </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+	  
+        <button type="button" class="btn btn-danger" onclick="loginValid()">login</button>
+      </div>
+
+    </div>
+   </form>
+  </div>
+</div>
+
+
+
+<div class="modal" id="myModal2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+		<form method="post" id="refForm" action="reginfo.jsp">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Register</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+	  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" name="name" id="name">
+  	</div>
+  	
+  	<div class="form-group">
+    <label for="name">Type:</label>
+    <select  class="form-control" id="userType" name="userType" >
+    	<option value="USER">User</option>
+    	<option value="AUTHOR" >Author</option>
+    </select>
+    
+  	</div>
+  
+        <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" name="email">
+  </div>
+  
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="userPassword" name="userPassword">
+  </div>
+  <div class="form-group">
+    <label for="pwd">confirm Password:</label>
+    <input type="password" class="form-control" id="userPassword2">
+  </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+	  
+        <button type="button" class="btn btn-danger" onclick="regForm()" >Register</button>
+      </div>
+	</form>
+    </div>
+  </div>
+ </div>
+</body>
+</html>
